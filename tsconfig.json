@@ -9,7 +9,7 @@
     // "moduleResolution": "Bundler" /* Specify how TypeScript looks up a file from a given module specifier. */,
     "moduleResolution": "NodeNext",
     "resolveJsonModule": true,
-    "types": ["node"],
+    "types": ["node", "cypress", "@cypress/react"],
     "skipLibCheck": true,
 
     /* JavaScript Support */

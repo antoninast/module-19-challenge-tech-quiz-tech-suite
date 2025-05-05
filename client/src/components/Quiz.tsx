@@ -1,6 +1,6 @@
 import { useState, } from 'react';
 import type { Question } from '../models/Question.js';
-import { getQuestions } from '../services/questionApi.js';
+import { getQuestions } from '../services/questionApi.ts';
 
 const Quiz = () => {
   const [questions, setQuestions] = useState<Question[]>([]);
@@ -29,6 +29,7 @@ const Quiz = () => {
     }
 
     const nextQuestionIndex = currentQuestionIndex + 1;
+    console.log(nextQuestionIndex);
     if (nextQuestionIndex < questions.length) {
       setCurrentQuestionIndex(nextQuestionIndex);
     } else {
