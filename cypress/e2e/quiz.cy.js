@@ -1,4 +1,4 @@
-describe('Quiz Component', () => {
+describe('Quiz Component E2E Tests', () => {
   let mockQuestions;
 
   beforeEach(() => {
